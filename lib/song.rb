@@ -37,7 +37,7 @@ class Song
   def self.artist_count
     artist_hash = {}
     @@artists.each { |art|
-      artist_hash[art] = 0 if !genre_hash.keys.include?(art)
+      artist_hash[art] = 0 if !artist_hash.keys.include?(art)
       artist_hash[art] += 1
     }
     artist_hash
