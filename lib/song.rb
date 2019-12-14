@@ -28,7 +28,7 @@ class Song
   def self.genre_count
     genre_hash = {}
     @@genres.each { |gen|
-      genre_hash[gen] = [] if !genre_hash.keys.include?(gen)
+      genre_hash[gen] = 1 if !genre_hash.keys.include?(gen)
       # genre_hash[gen][0] += 1 
     }
     genre_hash
