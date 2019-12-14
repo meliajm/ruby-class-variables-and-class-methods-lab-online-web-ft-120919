@@ -40,6 +40,7 @@ class Song
       artist_hash[art] = 0 if !genre_hash.keys.include?(art)
       artist_hash[art] += 1
     }
+    artist_hash
   end
     
 end 
